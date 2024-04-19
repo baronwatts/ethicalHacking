@@ -1,4 +1,4 @@
-#Python one liner utility scripts
+#Python one liner utility functions
 
 
 
