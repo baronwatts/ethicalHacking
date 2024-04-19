@@ -339,6 +339,16 @@ print(indices) # [3, 4]
 
 
 
+#=============================================================
+# Multiply All
+#=============================================================
+from functools import reduce
+def calculate(*n):
+    return reduce(lambda a, b: a * b, n)
+    
+print(calculate(10,10,20)) #=> 2000
+
+
 
 #=============================================================
 # CSV file to json
