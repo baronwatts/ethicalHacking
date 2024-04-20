@@ -164,7 +164,7 @@ print( count_occurrences(list(map(str.lower,["cat", "dog", "moose", "Cat"])), "c
 # Loop through array 
 #=============================================================
 upper_case = list(map(lambda x: x.upper(), ['apple', 'banana', 'cherry']))
-
+print(upper_case) #=> ['APPLE', 'BANANA', 'CHERRY']
 
 
 
@@ -175,7 +175,7 @@ students = ['Dilli', 'Vikram', 'Rolex', 'Leo']
 grades = [85, 92, 78, 88]
 
 student_grade_pairs = list(zip(students, grades))
-print(student_grade_pairs)
+print(student_grade_pairs) #=> [('Dilli', 85), ('Vikram', 92), ('Rolex', 78), ('Leo', 88)]
 
 
 
@@ -189,7 +189,11 @@ grocery_list = ['Apples', 'Milk', 'Bread', 'Eggs', 'Cheese']
 for index, item in enumerate(grocery_list):
     print(f"{index}. {item}")
 
-
+#0. Apples
+#1. Milk
+#2. Bread
+#3. Eggs
+#4. Cheese
 
 
 
@@ -201,7 +205,7 @@ numbers = [1, 2, 3]
 
 a, b, c = numbers
 
-print(a, b, c)
+print(a, b, c) #=> 1 2 3
 
 
 
