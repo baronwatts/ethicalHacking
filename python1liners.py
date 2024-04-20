@@ -73,20 +73,6 @@ print( array_has_item(['orange', 'red', 'blue'], 'blue') ) #=> True
 
 
 
-
-
-#=============================================================
-# Remove specicif item an an array
-#=============================================================
-def remove_array_item(array, item):
-    return [x for x in array if x != item]
-
-print(remove_array_item(['red', 'blue', 'green', 'tan'], 'tan'))  #=> ['red', 'blue', 'green']
-
-
-
-
-
 #=============================================================
 # Shuffle an array
 #=============================================================
