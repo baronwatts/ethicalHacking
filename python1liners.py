@@ -28,7 +28,7 @@ print(is_first_biggest([20.1, 5, 4, 3, 2, 1]))  # True
 
 
 #=============================================================
-# Remove item form an array
+# Remove item from an array
 #=============================================================
 def remove_array_item(array, item):
     return [x for x in array if x != item]
@@ -50,7 +50,7 @@ print( rand_step(0, 100, 20)) #=> 0,20,40,60,80
 
 
 #=============================================================
-# Get random item an an array 
+# Get random item from an array 
 #=============================================================
 import random
 
@@ -100,7 +100,7 @@ print( my_sort(10, 2, 3) ) #=> [2, 3, 10]
 
 
 #=============================================================
-# Break down an array in chunks
+# Break down an array into chunks
 #=============================================================
 def chunk_array(arr, size):
     return [arr[i:i + size] for i in range(0, len(arr), size)]
@@ -161,7 +161,7 @@ print( count_occurrences(list(map(str.lower,["cat", "dog", "moose", "Cat"])), "c
 
 
 #=============================================================
-# Loop through array 
+# Loop through an array 
 #=============================================================
 upper_case = list(map(lambda x: x.upper(), ['apple', 'banana', 'cherry']))
 print(upper_case) #=> ['APPLE', 'BANANA', 'CHERRY']
