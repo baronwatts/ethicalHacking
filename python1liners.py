@@ -361,6 +361,13 @@ python -c "import urllib, sys ; print urllib.quote_plus(sys.stdin.read())";
 
 
 
+#==================================================================================
+# Encrypt string
+#==================================================================================
+from hashlib import sha256
+
+input_ = input('Enter something: ')
+print(sha256(input_.encode('utf-8')).hexdigest())
 
 
 
