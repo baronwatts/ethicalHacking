@@ -377,24 +377,26 @@ print(sha256(input_.encode('utf-8')).hexdigest())
 plaintext = "Iamhurtverybadlyhelp"
 plaintext2 = "Iryyatbhmvaehedlurlp"
 
+'''
   |   |   |   |   |   |  |
        | I | a | m | h | u |  |
      __| r | t | v | e | r |__|
     |  | y | b | a | d | l |
     |  | y | h | e | l | p |
     |  |   |   |   |   |   |
-
+'''
 
 plaintext3 = "howdoesthiswork" 
 plaintext4 = "hdsioootsrwehwk"
-	
+
+'''
   |   |   |   |   |   |
        | H | O | W |  |
      __| D | O | E |__|
     |  | S | T | H |
     |  | I | S | W |
     |  | O | R | K |
-
+'''
 
 def encrypt(rows, plaintext):
     assert len(plaintext) % rows == 0
