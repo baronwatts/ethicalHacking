@@ -368,33 +368,3 @@ from hashlib import sha256
 
 input_ = input('Enter something: ')
 print(sha256(input_.encode('utf-8')).hexdigest())
-
-
-
-#==================================================================================
-# Scytale Cipher
-#==================================================================================
-plaintext = "Iryyatbhmvaehedlurlp"
-plaintext2 = "hdsioootsrwehwk"
-
-def encrypt(rows, plaintext):
-    assert len(plaintext) % rows == 0
-    n = len(plaintext)
-    columns = n // rows
-    ciphertext = ['-'] * n
-    for i in range(n):
-        row, col = i // columns, i % columns
-        ciphertext[col * rows + row] = plaintext[i]
-    return "".join(ciphertext)
-
-def decrypt(rows, ciphertext):
-    assert len(ciphertext) % rows == 0
-    return encrypt(len(ciphertext) // rows, ciphertext)
-    
-       
-print(encrypt(3, plaintext2)) #=> howdoesthiswork
-
-
-
-
-
