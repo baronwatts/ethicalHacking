@@ -371,6 +371,21 @@ print(sha256(input_.encode('utf-8')).hexdigest())
 
 
 
+
+#==================================================================================
+# IP address to decimal conversion
+#==================================================================================
+from functools import reduce
+
+def ip_converter(ip_or_int):
+    return '.'.join(str((ip_or_int >> (8 * i)) & 0xFF) for i in range(3, -1, -1)) if isinstance(ip_or_int, int) else sum(int(byte) << (8 * (3 - i)) for i, byte in enumerate(ip_or_int.split('.'))) if isinstance(ip_or_int, str) else ValueError("Input must be either a string representing an IP address or an integer.")
+
+
+print( ip_converter('190.6.66.92') ) #=> returns decimal 3188081244
+print( ip_converter(3188081244) ) #=> returns ip 76.143.106.162
+
+
+
 #==================================================================================
 # Scytale Cipher - https://en.wikipedia.org/wiki/Scytale
 #==================================================================================
